@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grumpy Cat Game</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="game-container">
+      <div class="canvas-container">
+        <canvas id="gameCanvas" width="400" height="400"></canvas>
+        <!-- Add an invisible div for the cat's nose -->
+        <div id="nose-button"></div>
+        <div id="buttons" style="display: none">
+          <button class="game-button" data-value="1">Pet</button>
+          <button class="game-button" data-value="2">Play</button>
+          <button class="game-button" data-value="3">Give treat</button>
+        </div>
+      </div>
+      <div id="message">Tap Grumpy Cat's nose to start!</div>
+    </div>
+    <script src="js/game.js"></script>
+  </body>
+</html>

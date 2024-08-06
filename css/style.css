@@ -1,0 +1,82 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.game-container {
+  text-align: center;
+}
+
+.canvas-container {
+  position: relative;
+  display: inline-block;
+}
+
+#gameCanvas {
+  background-color: #ffffff;
+  border: 2px solid #000;
+  display: block;
+}
+
+#nose-button {
+  position: absolute;
+  top: 190px; /* Adjust these values to match your image */
+  left: 180px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+#buttons {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between; /* Distribute space between buttons */
+  width: 180; /* Adjust the width to fit within the canvas */
+}
+
+.game-button {
+  width: 60px; /* Fixed width for all buttons */
+  height: 60px; /* Fixed height for all buttons */
+  font-size: 18px;
+  padding: 0; /* Remove padding to fit the fixed height */
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  transition: background-color 0.3s, transform 0.3s;
+  margin: 0 10px; /* Space between buttons */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center text inside button */
+}
+
+.game-button:hover {
+  background-color: #e0e0e0;
+}
+
+.game-button:active {
+  transform: scale(0.95);
+}
+
+.game-button.highlight {
+  background-color: yellow; /* or any color you prefer */
+  transform: scale(1.1); /* slightly enlarge the button */
+  transition: all 0.2s ease;
+}
+
+#message {
+  margin-top: 20px;
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+}
